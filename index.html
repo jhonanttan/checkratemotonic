@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escalonamento Rate-Monotonic</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Escalonamento Rate-Monotonic</h2>
+    <label for="numTasks">Número de Tarefas:</label>
+    <input type="number" id="numTasks" min="1">
+    <button onclick="setupTasks()">Definir Tarefas</button>
+    <div id="tasksInput" class="task-inputs"></div>
+    <button onclick="checkSchedulability()">Verificar Escalonabilidade</button>
+    <div id="result" class="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
